@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return redirect()->away('https://www.twitch.tv/rhk3d');
-});
+Route::permanentRedirect('/', 'https://www.twitch.tv/rhk3d');
+Route::permanentRedirect('/gps', 'https://rtirl.com/twitch:224839786');
+Route::permanentRedirect('/discord', 'https://discord.gg/QugpXEyh4d');
