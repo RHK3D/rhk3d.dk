@@ -1,0 +1,17 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-74f3d6af.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-2e5bf673.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/overlay.js": {
+    "file": "assets/overlay-8a6b1705.js",
+    "src": "resources/js/overlay.js",
+    "isEntry": true
+  }
+}
