@@ -17,4 +17,6 @@ Route::permanentRedirect('/', 'https://www.twitch.tv/rhk3d');
 Route::permanentRedirect('/gps', 'https://rtirl.com/twitch:224839786');
 Route::permanentRedirect('/discord', 'https://discord.gg/QugpXEyh4d');
 
-Route::view('/test', 'overlays.main');
+Route::prefix('overlays')->group(function () {
+    Route::view('/main', 'overlays.main');
+});

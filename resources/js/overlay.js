@@ -1,6 +1,6 @@
 import * as RealtimeIRL from '@rtirl/api';
 
-var mapboxClient = mapboxSdk({ accessToken: 'pk.eyJ1IjoiZHVua3N0b3JtZW4iLCJhIjoiY2t3YjIyZXR5MXowMjJ4cWxtajNiZ2Z1NyJ9.2TJhcds8NIYPVG5ZY1x_Ew' });
+var mapboxClient = mapboxSdk({ accessToken: 'pk.eyJ1IjoiZHVua3N0b3JtZW4iLCJhIjoiY2xidGY2cWM2MWtzaDNvbXJ2N3QwaHUyaCJ9.WjvyntyGJ391cS9wnP6WUg' });
 
 var params = new URLSearchParams(window.location.search);
 var pullKey = params.get('key');
@@ -11,10 +11,12 @@ if(!pullKey) {
     window.location.href = "/";
 }
 
+
+
 RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
     if(i++ % 50 == 0) {
         mapboxClient.geocoding.reverseGeocode({
-            query: [location.latitude, location.longitude],
+            query: [location.longitude, location.latitude],
             types: ['country', 'region', 'postcode', 'district', 'place', 'locality', 'neighborhood', 'address', 'poi'],
             language: 'en'
         })
@@ -44,16 +46,6 @@ RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
     }
 });
 
-RealtimeIRL.forPullKey(pullKey).addAltitudeListener(function(altitude) {
-    if(!altitude) {
-        return;
-    }
-
-    altitude = altitude["EGM96"] | 0;
-
-    document.getElementById("altitude").innerText = altitude + "m";
-});
-
 RealtimeIRL.forPullKey(pullKey).addSpeedListener(function(speed) {
     if(!speed) {
         return;
@@ -61,5 +53,5 @@ RealtimeIRL.forPullKey(pullKey).addSpeedListener(function(speed) {
 
     speed = (speed * 3.6) | 0;
 
-    document.getElementById("speedometer").innerText = speed + " km/t";
+    //document.getElementById("speedometer").innerText = speed + " km/t";
 });
