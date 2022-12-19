@@ -11,7 +11,19 @@ if(!pullKey) {
     window.location.href = "/";
 }
 
+const interval = setInterval(function() {
+    const today = new Date();
+    let clock = '--:--';
+    let minutes = today.getMinutes();
+    let hours = today.getHours();
 
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    hours = hours < 10 ? "0" + hours : hours;
+
+    clock = hours + ":" + minutes;
+
+    $('#clock').html(clock);
+}, 1000);
 
 RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
     if(i++ % 50 == 0) {
