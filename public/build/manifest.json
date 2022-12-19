@@ -4,14 +4,14 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
-  "resources/js/app.js": {
-    "file": "assets/app-2e5bf673.js",
-    "src": "resources/js/app.js",
-    "isEntry": true
-  },
   "resources/js/overlay.js": {
     "file": "assets/overlay-b4a8908f.js",
     "src": "resources/js/overlay.js",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-c4b38c6a.js",
+    "src": "resources/js/app.js",
     "isEntry": true
   }
 }

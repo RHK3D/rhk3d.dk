@@ -7,6 +7,7 @@
     <title>Document</title>
     <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
     @vite('resources/css/app.css')
+    @vite('resources/js/app.js')
     @vite('resources/js/overlay.js')
 </head>
 <body>
