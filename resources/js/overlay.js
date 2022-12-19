@@ -18,7 +18,7 @@ RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
         mapboxClient.geocoding.reverseGeocode({
             query: [location.longitude, location.latitude],
             types: ['country', 'region', 'postcode', 'district', 'place', 'locality', 'neighborhood', 'address', 'poi'],
-            language: 'en'
+            language: ['en']
         })
         .send()
         .then(function(response) {
