@@ -1,6 +1,6 @@
 import * as RealtimeIRL from '@rtirl/api';
 
-var mapboxClient = mapboxSdk({ accessToken: 'pk.eyJ1IjoiZHVua3N0b3JtZW4iLCJhIjoiY2xidGY2cWM2MWtzaDNvbXJ2N3QwaHUyaCJ9.WjvyntyGJ391cS9wnP6WUg' });
+var mapboxClient = mapboxSdk({ accessToken: 'pk.eyJ1IjoiZHVua3N0b3JtZW4iLCJhIjoiY2xkYWM1bmxyMGhwODN5bGkwcHFodWs0bSJ9.zrl0dfyH39Vxpwyu6M4haQ' });
 
 var params = new URLSearchParams(window.location.search);
 var pullKey = params.get('key');
