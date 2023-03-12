@@ -19,4 +19,5 @@ Route::permanentRedirect('/discord', 'https://discord.gg/QugpXEyh4d');
 
 Route::prefix('overlays')->group(function () {
     Route::view('/main', 'overlays.main');
+    Route::view('/preview', 'overlays.preview');
 });
