@@ -9,5 +9,6 @@ class OverlayController extends Controller
 {
     public function toggleSpeedometer() {
         event(new SpeedometerToggled());
+        return "Slår speedometeret til og fra";
     }
 }
