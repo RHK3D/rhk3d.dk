@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\OverlayController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,4 +21,6 @@ Route::permanentRedirect('/discord', 'https://discord.gg/QugpXEyh4d');
 Route::prefix('overlays')->group(function () {
     Route::view('/main', 'overlays.main');
     Route::view('/preview', 'overlays.preview');
+
+    Route::get('/speedometer/toggle', [OverlayController::class, 'toggleSpeedometer']);
 });

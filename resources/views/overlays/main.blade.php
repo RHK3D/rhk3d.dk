@@ -24,10 +24,10 @@
             <h1 class="text-lg font-medium">Højde over havet</h1>
             <p id="altitude" class="text-2xl font-semibold"></p>
         </div-->
-        <!--div class="bg-black backdrop-blur-sm rounded-md bg-opacity-90 p-2 ml-2 hidden" id="speedometer-container">
+        <div class="bg-black backdrop-blur-sm rounded-md bg-opacity-90 p-2 ml-2" id="speedometer-container">
             <h1 class="text-lg font-medium">Hastighed (BETA)</h1>
             <p id="speedometer" class="text-2xl font-semibold"></p>
-        </div-->
+        </div>
     </div>
     <div class="absolute bottom-4 right-4 p-2 flex flex-col rounded-md">
         <span class="text-5xl text-blue-800 font-semibold">RHK3D</span>

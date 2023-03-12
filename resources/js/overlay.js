@@ -25,6 +25,13 @@ const interval = setInterval(function() {
     $('#clock').html(clock);
 }, 1000);
 
+Echo.channel('overlay')
+.listen('.overlay.speedometer.toggle', function (e) {
+    var element = $('#speedometer-container');
+
+    (element.hasClass("hidden")) ? element.removeClass('hidden') : element.addClass('hidden');
+});
+
 RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
     if(i++ % 50 == 0) {
         mapboxClient.geocoding.reverseGeocode({
@@ -65,5 +72,5 @@ RealtimeIRL.forPullKey(pullKey).addSpeedListener(function(speed) {
 
     speed = (speed * 3.6) | 0;
 
-    //document.getElementById("speedometer").innerText = speed + " km/t";
+    document.getElementById("speedometer").innerText = speed + " km/t";
 });
