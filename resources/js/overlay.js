@@ -32,6 +32,11 @@ Echo.channel('overlay')
     (element.hasClass("hidden")) ? element.removeClass('hidden') : element.addClass('hidden');
 });
 
+Echo.channel('overlay')
+.listen('.overlay.reload', function (e) {
+    window.location.reload();
+});
+
 RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
     if(i++ % 50 == 0) {
         mapboxClient.geocoding.reverseGeocode({

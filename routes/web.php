@@ -23,4 +23,5 @@ Route::prefix('overlays')->group(function () {
     Route::view('/preview', 'overlays.preview');
 
     Route::get('/speedometer/toggle', [OverlayController::class, 'toggleSpeedometer']);
+    Route::get('/reload', [OverlayController::class, 'reloadOverlay']);
 });
