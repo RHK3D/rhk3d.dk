@@ -16,7 +16,7 @@
         "vite": "^4.0.3"
     },
     "dependencies": {
-        "@mapbox/mapbox-sdk": "^0.14.0",
+        "@mapbox/mapbox-sdk": "^0.15.1",
         "@rtirl/api": "^1.1.5",
         "jquery": "^3.6.3"
     }
