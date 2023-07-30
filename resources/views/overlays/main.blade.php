@@ -31,7 +31,7 @@
             </div>
         </div>
     </div>
-    <div class="absolute bottom-4 right-4 p-2 flex flex-col rounded-md">
+    <div class="hidden absolute bottom-4 right-4 p-2 flex flex-col rounded-md">
         <span class="text-5xl text-blue-800 font-semibold">RHK3D</span>
     </div>
 </body>
