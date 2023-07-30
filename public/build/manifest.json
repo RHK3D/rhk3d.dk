@@ -1,17 +1,17 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-7ca477c9.css",
-    "src": "resources/css/app.css",
-    "isEntry": true
-  },
-  "resources/js/overlay.js": {
-    "file": "assets/overlay-ac9432d2.js",
-    "src": "resources/js/overlay.js",
-    "isEntry": true
+    "file": "assets/app-5f1750f7.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-5e424ae2.js",
-    "src": "resources/js/app.js",
-    "isEntry": true
+    "file": "assets/app-e7477a9b.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/overlay.js": {
+    "file": "assets/overlay-2cbcb9a5.js",
+    "isEntry": true,
+    "src": "resources/js/overlay.js"
   }
 }
