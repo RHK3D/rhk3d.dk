@@ -10,9 +10,9 @@
     @vite('resources/js/app.js')
     @vite('resources/js/overlay.js')
 </head>
-<body class="h-screen">
-    <div class="absolute right-0 top-full left-1/2 transform -translate-x-1/2 -translate-y-full text-red-600">
-        <div class="flex flex-row justify-center mb-4">
+<body>
+    <div class="flex justify-center">
+        <div class="flex flex-row text-red-600 mt-4">
             <div class="bg-black backdrop-blur-sm rounded-md bg-opacity-90 p-2">
                 <h1 class="text-lg font-medium">Lokal tid</h1>
                 <p id="clock" class="text-2xl font-semibold">00:00</p>
