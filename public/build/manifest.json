@@ -1,16 +1,16 @@
 {
   "resources/css/app.css": {
-    "file": "assets/app-0d5d7701.css",
+    "file": "assets/app-f587ec5a.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.js": {
-    "file": "assets/app-e7477a9b.js",
+    "file": "assets/app-c6c6c90f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   },
   "resources/js/overlay.js": {
-    "file": "assets/overlay-2cbcb9a5.js",
+    "file": "assets/overlay-a1224d14.js",
     "isEntry": true,
     "src": "resources/js/overlay.js"
   }
