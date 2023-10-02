@@ -18,6 +18,6 @@
     "dependencies": {
         "@mapbox/mapbox-sdk": "^0.15.3",
         "@rtirl/api": "^1.0.7",
-        "jquery": "^3.7.0"
+        "jquery": "^3.7.1"
     }
 }
