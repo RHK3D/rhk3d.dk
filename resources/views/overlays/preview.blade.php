@@ -19,9 +19,9 @@
             <div class="flex flex-shrink-0 items-center">
                 <div class="flex space-x-2">
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                    <a href="#" class="text-white text-sm font-medium px-3 py-2">Lokal tid: <span id="clock" class="font-normal">00:00</span></a>
-                    <a href="#" class="text-white text-sm font-medium px-3 py-2">Lokation: <span id="city" class="font-normal">...</span></a>
-                    <a href="#" class="text-white text-sm font-medium px-3 py-2">Hastighed: <span id="speedometer" class="font-normal">79 km/t</span></a>
+                    <a href="#" class="text-white text-md font-medium px-3 py-2">Lokal tid: <span id="clock" class="font-normal">00:00</span></a>
+                    <a href="#" class="text-white text-md font-medium px-3 py-2">Lokation: <span id="city" class="font-normal">...</span></a>
+                    <a href="#" class="text-white text-md font-medium px-3 py-2">Hastighed: <span id="speedometer" class="font-normal">79 km/t</span></a>
                 </div>
             </div>
         </div>
