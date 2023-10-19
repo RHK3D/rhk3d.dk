@@ -34,7 +34,7 @@ jobs:
         git checkout -B main
         git add -f public/
         git commit -m "Build front-end assets"
-        git push -f origin deploy
+        git push -f origin main
     - name: Generate key
       run: php artisan key:generate
     - name: Directory Permissions
