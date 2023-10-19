@@ -13,8 +13,8 @@
 <body>
 
     <nav class="bg-black border-b-4 border-sky-600">
-    <div class="mx-auto max-w-7xl px-2 sm:px-2 lg:px-4">
-        <div class="relative flex h-16 items-center justify-between">
+    <div class="mx-auto">
+        <div class="relative flex h-10 items-center justify-between">
         <div class="flex flex-1 items-center justify-center sm:items-stretch">
             <div class="flex flex-shrink-0 items-center">
                 <div class="flex space-x-2">
