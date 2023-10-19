@@ -12,8 +12,8 @@
 </head>
 <body>
 
-    <nav class="bg-black border-b-4 border-cyan-600">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <nav class="bg-black border-b-4 border-sky-600">
+    <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
         <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-center sm:items-stretch">
             <div class="flex flex-shrink-0 items-center">
