@@ -13,7 +13,7 @@
 <body>
 
     <nav class="bg-black border-b-4 border-sky-600">
-    <div class="mx-auto max-w-7xl px-2 sm:px-4 lg:px-6">
+    <div class="mx-auto max-w-7xl px-2 sm:px-2 lg:px-4">
         <div class="relative flex h-16 items-center justify-between">
         <div class="flex flex-1 items-center justify-center sm:items-stretch">
             <div class="flex flex-shrink-0 items-center">
@@ -21,7 +21,7 @@
                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                     <a href="#" class="text-white text-md font-medium px-3 py-2">Lokal tid: <span id="clock" class="font-normal">00:00</span></a>
                     <a href="#" class="text-white text-md font-medium px-3 py-2">Lokation: <span id="city" class="font-normal">...</span></a>
-                    <a href="#" class="text-white text-md font-medium px-3 py-2">Hastighed: <span id="speedometer" class="font-normal">79 km/t</span></a>
+                    <a href="#" class="text-white text-md font-medium px-3 py-2">Hastighed: <span id="speedometer" class="font-normal">0 km/t</span></a>
                 </div>
             </div>
         </div>
