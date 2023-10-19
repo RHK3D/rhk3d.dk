@@ -27,6 +27,14 @@ jobs:
       run: npm ci
     - name: Build assets
       run: npm run build
+    - name: Commit built assets
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout -B deploy
+        git add -f public/
+        git commit -m "Build front-end assets"
+        git push -f origin deploy
     - name: Generate key
       run: php artisan key:generate
     - name: Directory Permissions
