@@ -83,7 +83,7 @@ RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
               const temp = json["main"]["temp"] - 273.15;
               document.getElementById("temperature").innerText =
                 // handle negative zero.
-                (temp || 0).toFixed(0) + ' °C';
+                (temp || 0).toFixed(0) + " °C";
             });
 
         
