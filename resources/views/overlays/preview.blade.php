@@ -22,6 +22,7 @@
                     <a href="#" class="text-white text-md font-medium px-3">Lokal tid: <span id="clock" class="font-normal">00:00</span></a>
                     <a href="#" class="text-white text-md font-medium px-3">Lokation: <span id="city" class="font-normal">...</span></a>
                     <a href="#" class="text-white text-md font-medium px-3">Hastighed: <span id="speedometer" class="font-normal">0 km/t</span></a>
+                    <a href="#" class="text-white text-md font-medium px-3">Temperatur: <span id="temperature" class="font-normal">0</span> °C</a>
                 </div>
             </div>
         </div>
