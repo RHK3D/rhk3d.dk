@@ -68,6 +68,7 @@ RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
             }
         });
 
+
         fetch(
             "https://api.openweathermap.org/data/2.5/weather?lat=" +
               location.latitude +
@@ -75,16 +76,18 @@ RealtimeIRL.forPullKey(pullKey).addLocationListener(function (location) {
               location.longitude +
               "&appid=64fb789b4ab267d578a5b1c24fd4b5ba",
           )
-          .then(function (response) {
-            return response.json();
-          })
-          .then(function (json) {
-            const temp = json["main"]["temp"] - 273.15;
-            document.getElementById("temperature").innerText =
-              // handle negative zero.
-              (temp || 0).toFixed(0);
-          });
+            .then(function (response) {
+              return response.json();
+            })
+            .then(function (json) {
+              const temp = json["main"]["temp"] - 273.15;
+              document.getElementById("temperature").innerText =
+                // handle negative zero.
+                (temp || 0).toFixed(0);
+            });
 
+        
+    }
 });
 
 RealtimeIRL.forPullKey(pullKey).addSpeedListener(function(speed) {
