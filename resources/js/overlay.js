@@ -34,6 +34,7 @@ Echo.channel('overlay')
 
 Echo.channel('overlay')
 .listen('.overlay.reload', function (e) {
+    console.log("Reloading...");
     window.location.reload();
 });
 
