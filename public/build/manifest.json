@@ -10,7 +10,7 @@
     "src": "resources/js/app.js"
   },
   "resources/js/overlay.js": {
-    "file": "assets/overlay-de42e49c.js",
+    "file": "assets/overlay-2671aea0.js",
     "isEntry": true,
     "src": "resources/js/overlay.js"
   }
