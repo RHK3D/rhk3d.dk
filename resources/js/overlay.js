@@ -16,16 +16,14 @@ const interval = setInterval(function() {
     const options = { timeZone: 'Europe/Helsinki', hour: '2-digit', minute: '2-digit'};
     const helsinkiTime = now.toLocaleString('en-US', options);
 
-    console.log(helsinkiTime);
-
     let clock = '--:--';
     let minutes = today.getMinutes();
-    let hours = today.getHours();
+    let hours = today.getHours()+1;
 
     minutes = minutes < 10 ? "0" + minutes : minutes;
     hours = hours < 10 ? "0" + hours : hours;
 
-    clock = helsinkiTime;
+    clock = hours + ':' + minutes;
 
     $('#clock').html(clock);
 }, 1000);
