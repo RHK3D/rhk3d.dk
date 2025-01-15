@@ -15,7 +15,7 @@ const interval = setInterval(function() {
     const today = new Date();
     let clock = '--:--';
     let minutes = today.getMinutes();
-    let hours = today.getHours();
+    let hours = today.getHours()+1;
 
     minutes = minutes < 10 ? "0" + minutes : minutes;
     hours = hours < 10 ? "0" + hours : hours;
