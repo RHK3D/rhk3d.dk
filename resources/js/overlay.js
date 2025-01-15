@@ -13,6 +13,7 @@ if(!pullKey) {
 
 const interval = setInterval(function() {
     const today = new Date();
+    today.toLocaleString('da-DK', {timeZone: 'Europe/Helsinki'});
     let clock = '--:--';
     let minutes = today.getMinutes();
     let hours = today.getHours();
