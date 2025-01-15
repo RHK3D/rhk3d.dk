@@ -17,6 +17,9 @@ use App\Http\Controllers\OverlayController;
 Route::permanentRedirect('/', 'https://www.twitch.tv/rhk3d');
 Route::permanentRedirect('/gps', 'https://rtirl.com/twitch:224839786');
 Route::permanentRedirect('/discord', 'https://discord.gg/QugpXEyh4d');
+Route::prefix('carbagerun')->group(function () {
+    Route::permanentRedirect('/dag4-rute', 'https://maps.app.goo.gl/2v7pUPvGisZ9fMGB7?g_st=ic');
+});
 
 Route::prefix('overlays')->group(function () {
     Route::view('/main', 'overlays.main');
