@@ -12,8 +12,10 @@ if(!pullKey) {
 }
 
 const interval = setInterval(function() {
-    const today = new Date();
-    today.setTimezoneOffset(300);
+    const now = new Date();
+    const options = { timeZone: 'Europe/Helsinki', hour: '2-digit', minute: '2-digit'};
+    const helsinkiTime = now.toLocaleString('en-US', options);
+
     let clock = '--:--';
     let minutes = today.getMinutes();
     let hours = today.getHours();
@@ -21,7 +23,7 @@ const interval = setInterval(function() {
     minutes = minutes < 10 ? "0" + minutes : minutes;
     hours = hours < 10 ? "0" + hours : hours;
 
-    clock = hours + ":" + minutes;
+    clock = helsinkiTime;
 
     $('#clock').html(clock);
 }, 1000);
