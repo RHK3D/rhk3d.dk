@@ -16,6 +16,8 @@ const interval = setInterval(function() {
     const options = { timeZone: 'Europe/Helsinki', hour: '2-digit', minute: '2-digit'};
     const helsinkiTime = now.toLocaleString('en-US', options);
 
+    console.log(helsinkiTime);
+
     let clock = '--:--';
     let minutes = today.getMinutes();
     let hours = today.getHours();
